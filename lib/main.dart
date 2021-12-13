@@ -72,13 +72,14 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(70.0),
+        preferredSize: Size.fromHeight(100.0),
         child: AppBar(
           backgroundColor: Colors.grey[850],
           centerTitle: true,
           leading: Icon(
             Icons.home_filled,
             size: 50,
+            color: Colors.white,
           ),
           title: Center(
             child: Column(
@@ -91,7 +92,11 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           actions: [
-            Icon(Icons.image),
+            Icon(
+              Icons.image,
+              size: 50,
+              color: Colors.white,
+            ),
           ],
           // Here we take the value from the MyHomePage object that was created by
           // the App.build method, and use it to set our appbar title.
